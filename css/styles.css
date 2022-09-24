@@ -15,6 +15,45 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+img {
+  display: block;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  padding-left: 215px;
+  padding-right: 215px;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  outline: 2px solid red;
+  margin: 0 auto;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin: 0;
+}
 
 .list {
   list-style: none;
@@ -48,6 +87,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
+  margin-right: 93px;
 }
 .blue-logo {
   color: var(--second-page-color);
@@ -74,12 +114,34 @@ body {
   color: var(--main-text-color);
 }
 
+.header-list {
+  display: flex;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.contact-list {
+  display: flex;
+}
 .current {
   color: var(--second-page-color);
 }
+
 /* -----------HERO index------------ */
 .hero {
   background-color: #2f303a;
+  text-align: center;
 }
 
 .hero-title {
@@ -90,17 +152,26 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-page-color);
+  margin-bottom: 30px;
+  max-width: 696px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero-btn {
   font-family: "Roboto";
   font-weight: 700;
+  font-style: normal;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--main-page-color);
   background-color: var(--button-background-color);
   cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
+  display: inline-block;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -108,12 +179,17 @@ body {
   color: var(--second-page-color);
 }
 /* -----------MAIN index------------ */
+.advantages-list {
+  display: flex;
+}
+
 .advantages-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .advantages-text {
   line-height: 1.71;
@@ -125,6 +201,11 @@ body {
   line-height: 1.31;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.about-us-list {
+  display: flex;
+  gap: 30px;
 }
 
 .team {
@@ -136,18 +217,28 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.team-list {
+  display: flex;
+  gap: 30px;
+}
+.team-item img {
+  margin-bottom: 30px;
 }
 .name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 .team-text {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-bottom: 30px;
 }
 /* -----------MAIN portfolio----------- */
 .filter-btn {
