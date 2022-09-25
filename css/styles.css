@@ -333,10 +333,9 @@ ol {
 .footer {
   background-color: #2f303a;
 }
-.footer-box {
+.footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 215px;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
