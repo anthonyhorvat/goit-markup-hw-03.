@@ -17,6 +17,8 @@ body {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 *,
@@ -50,6 +52,13 @@ ul,
 ol {
   padding-left: 0;
   margin: 0;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
 
 .list {
@@ -136,6 +145,9 @@ ol {
 .header-tel,
 .header-mail {
   color: var(--main-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .current {
@@ -146,6 +158,7 @@ ol {
 .hero {
   background-color: #2f303a;
   text-align: center;
+  padding: 200px 0;
 }
 
 .hero-title {
@@ -170,12 +183,11 @@ ol {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--main-page-color);
-  background-color: var(--button-background-color);
-  cursor: pointer;
-  border-radius: 4px;
+  background-color: #2196f3;
   padding: 10px 32px;
-  display: inline-block;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -185,6 +197,7 @@ ol {
 /* -----------MAIN index------------ */
 .advantages-list {
   display: flex;
+  gap: 30px;
 }
 
 .advantages-title {
@@ -199,6 +212,10 @@ ol {
   line-height: 1.71;
   color: var(--main-text-color);
 }
+.about-us {
+  padding-top: 0px;
+}
+
 .about-us-title {
   font-weight: 700;
   font-size: 36px;
@@ -315,9 +332,11 @@ ol {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-title-color);
+  margin-bottom: 4px;
 }
 
 .projects-text {
+  margin-top: 0px;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -332,11 +351,10 @@ ol {
 /* -----------FOOTER------------ */
 .footer {
   background-color: #2f303a;
-}
-.footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -345,7 +363,7 @@ ol {
   letter-spacing: 0.03em;
   color: var(--main-page-color);
   margin-bottom: 20px;
-  display: flex;
+  display: block;
 }
 .address-link {
   font-style: normal;
